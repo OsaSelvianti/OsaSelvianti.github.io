@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengiriman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="c:\Apis\APA aAJA\YYYY\coba kali ya\foto\5a7f5f47abc3d121aba71181.png" class="logo" alt="" width="50px"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="order.hmtl">Order</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><i class="fa-solid fa-truck-fast"></i></a></li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <h4>Ini adalah Web Site Shipping</h4>
+        <h2>Super shippping deals</h2>
+        <h1>On all products</h1>
+        <!-- <p>Save More with coupons & up to 70% off</p> -->
+        <button>Now</button>
+    </section>
+
+    <section id = "transport" class="section-p1">
+        <h2>Transportasi</h2>
+
+        <div class="transport-content">
+            <div class="box">
+                <img src="images/Sea-cargo.png" alt="laut">
+                <h4>Pengirim Laut</h4>
+            </div>
+
+            <div class="box">
+                <img src="images/Tips-Memilih-Jasa-Pengiriman-Cargo-Udara-Yang-Cepat-Dan-Terpercaya.jpg" alt="udara">
+                <h4>Pengirim Udara</h4>
+            </div>
+            
+            <div class="box">
+                <img src="images/hero-banner.jpg" alt="truck">
+                <h4>Pengirim Truck</h4>
+            </div>
+
+            <div class="box">
+                <img src="images/jasa-pengiriman-barang-via-kereta-api.jpg" alt="kereta">
+                <h4>Pengirim Kereta</h4>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <h1>Informasi Pengiriman</h1>
+<form id="formPengiriman">
+    <!-- Formulir pengirim -->
+    <h2>Informasi Pengirim</h2>
+
+    <label for="nama">Nama Pengirim:</label>
+    <input type="text" id="nama" required><br><br>
+
+    <label for="alamat">Alamat Pengirim:</label>
+    <input type="text" id="alamat" required><br><br>
+
+    <label for="kota">Kota Pengirim:</label>
+    <select id="kota" required>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Bandung">Bandung</option>
+        <!-- Tambahkan pilihan kota lain sesuai kebutuhan -->
+    </select><br><br>
+
+    <label for="provinsi">Provinsi Pengirim:</label>
+    <select id="provinsi" required>
+        <option value="DKI Jakarta">DKI Jakarta</option>
+        <option value="Jawa Timur">Jawa Timur</option>
+        <option value="Jawa Barat">Jawa Barat</option>
+        <!-- Tambahkan pilihan provinsi lain sesuai kebutuhan -->
+    </select><br><br>
+
+    <label for="kodepos">Kode Pos Pengirim:</label>
+    <input type="text" id="kodepos" required pattern="\d{5}"><br><br>
+
+
+    <!-- Formulir penerima -->
+    <h2>Informasi Penerima</h2>
+
+    <label for="namaPenerima">Nama Penerima:</label>
+    <input type="text" id="namaPenerima" required><br><br>
+
+    <label for="alamatPenerima">Alamat Penerima:</label>
+    <input type="text" id="alamatPenerima" required><br><br>
+
+    <label for="kotaPenerima">Kota Penerima:</label>
+    <select id="kotaPenerima" required>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Bandung">Bandung</option>
+        <!-- Tambahkan pilihan kota lain sesuai kebutuhan -->
+    </select><br><br>
+
+    <label for="provinsiPenerima">Provinsi Penerima:</label>
+    <select id="provinsiPenerima" required>
+        <option value="DKI Jakarta">DKI Jakarta</option>
+        <option value="Jawa Timur">Jawa Timur</option>
+        <option value="Jawa Barat">Jawa Barat</option>
+        <!-- Tambahkan pilihan provinsi lain sesuai kebutuhan -->
+    </select><br><br>
+
+    <label for="kodeposPenerima">Kode Pos Penerima:</label>
+    <input type="text" id="kodeposPenerima" required pattern="\d{5}"><br><br>
+
+    <label for="tanggal">Tanggal:</label>
+    <input type="date" id="tanggal" required><br><br>
+
+    <label for="berat">Berat (kg):</label>
+    <input type="number" id="berat" step="0.1" required><br><br>
+
+    <h2>Total Harga:</h2>
+    <p id="totalHarga">-</p>
+
+
+    <input type="submit" value="Kirim">
+</form>
+
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
